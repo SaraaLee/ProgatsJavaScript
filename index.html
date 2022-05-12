@@ -50,6 +50,12 @@
     <div id="swipeUp">
         <a href="#top"><img src="./img/paw.png" alt="swipe up arrow"></a>
     </div>
+
+    <script>
+        console.log("holi");
+    </script>
+
+
     <script>
         // 1. Completa el código para que por consola se muestre el contenido textual del nodo h1
 
@@ -57,33 +63,37 @@
 
         // 2. Completa el código para cambiar el título h1 por "SuperProGats"
 
-        // document.querySelector("h1")
+         document.querySelector("h1").textContent = "SuperProgats";
 
         // 3. Completa el código para mostrar por consola el contenido del segundo h3. Por la consola debe aparecer "Verónica"
 
-        // console.log(document.querySelector(""));
+        console.log(document.querySelector(".card__veronica h3").textContent);
 
         // 4. Completa el código para mostrar por consola el valor del atributo "href" del enlace del footer. Debería aparecer "https://www.progatslagarriga.com"
 
+        console.log(document.querySelector(".footer--link").href);
+
         // 5. Completa el código para cambiar el logo del gato por el logo ubicado en img/logo-2.jfif
 
-        // document.querySelector("");
+        document.querySelector(".header--logo").src = "img/logo-2.jfif";
 
         // 6. Investiga como cambiar el color de fondo del body a través de la propiedad  backGroundColor. Investiga cómo cambiar el color de fondo al valor de la variable "nuevoColor".
 
         let nuevoColor = "aliceblue";
+        document.body.style.backgroundColor = nuevoColor;
 
         // 7. La variable 'window' es una variable global que almacena información relevante sobre el navegador. Investiga como conocer el tamaño actual del viewport, horintal y vertical. https://www.w3schools.com/js/js_window.asp 
         // Muestra el viewport actual con el formato anchoxalto. Ejemplo: 1280x780 (estos números dependerán de tu viewport, claro)
-
-        console.log("Viewport actual: " , window);
+        let ancho = window.innerWidth;
+        let alto = window.innerHeight;
+        console.log("Viewport actual: " , ancho + "x" + alto);
 
         // 8. Investiga como recuperar información sobre la URL en la que nos encotramos. https://www.w3schools.com/js/js_window_location.asp
 
-        console.log("La URL en la que me hallo es: ", window);
+        console.log(window.location.href, window);
 
         // 9. Ve a la siguiente página y pulsa el botón "Try IT". https://www.w3schools.com/js/tryit.asp?filename=tryjs_api_geolocation
-        // Podrías explicar que ha sucedido al ejecutar el código JavaScript?
+        // Podrías explicar que ha sucedido al ejecutar el código JavaScript? Me ha pedido la localización
         
 
     </script>
